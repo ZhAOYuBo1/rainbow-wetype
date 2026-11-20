@@ -1,0 +1,7 @@
+/target/
+/gui/target/
+*.zip
+
+# 发布用的打包产物和二进制不进仓库，统一从 GitHub Releases 下载
+/release/
+/skill/tools/wetype-color.exe

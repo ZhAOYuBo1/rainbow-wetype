@@ -1,0 +1,30 @@
+{
+  "schema": 1,
+  "knownBuild": "3.0.2.44",
+  "description": "WeType candidate brush construction signatures. Patterns are byte sequences; ?? is a wildcard byte. Offsets are relative to the start of the matched pattern.",
+  "offsets": {
+    "r": 7,
+    "g": 12,
+    "gDark": 18,
+    "b": 47,
+    "bDark": 53
+  },
+  "patterns": [
+    {
+      "name": "wetype-candidate-brush-exact-30244",
+      "kind": "exact",
+      "priority": 10,
+      "requiresUnique": true,
+      "pattern": "0F B6 53 78 C7 45 88 00 00 00 00 B8 B1 00 00 00 41 B8 A8 00 00 00 84 D2 41 0F 45 C0 0F 57 C0 F3 48 0F 2A C0 F3 41 0F 5E C4 F3 0F 11 45 8C B8 76 00 00 00 41 B8 6F 00 00 00",
+      "notes": "Exact 3.0.2.44 original bytes; green #00B176. Match starts at file offset 0x114EA5."
+    },
+    {
+      "name": "wetype-candidate-brush-struct-v1",
+      "kind": "struct",
+      "priority": 20,
+      "requiresUnique": true,
+      "pattern": "0F B6 53 78 C7 45 ?? ?? ?? ?? ?? B8 ?? ?? 00 00 41 B8 ?? ?? 00 00 84 D2 41 0F 45 C0 0F 57 C0 F3 48 0F 2A C0 F3 41 0F 5E C4 F3 0F 11 45 ?? B8 ?? ?? 00 00 41 B8 ?? ?? 00 00 41 0F 45 C0",
+      "notes": "Color immediates and stack displacement are wildcards; code shape/opcodes remain fixed. Works on already-patched renderers with a backup."
+    }
+  ]
+}

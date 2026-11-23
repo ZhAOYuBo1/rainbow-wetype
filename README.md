@@ -8,7 +8,7 @@
 这个工具通过字节签名定位候选框的 Direct2D brush 构造代码，只改写其中的颜色数据，
 改完重启输入法即可生效——不常驻、不注入、不做覆盖层。
 
-![rainbow-wetype 效果](docs/screenshot-crop.png)
+<!-- 演示视频：在 GitHub 网页编辑器把 docs/demo.mp4 拖到这个位置，GitHub 会自动生成可内嵌播放的链接，然后删除本注释 -->
 
 <div align="center">
 
